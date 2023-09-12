@@ -68,11 +68,11 @@ void insertTreeMap(TreeMap * tree, void* key, void * value) {
           
         }else if(tree->lower_than(current->pair->key, key)){
           
-            current = current->left;
+            current = current->right;
           
         }else{
           
-            current = current->right; 
+            current = current->left; 
         }
     }
 
