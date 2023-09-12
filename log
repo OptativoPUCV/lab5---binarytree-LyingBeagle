@@ -33,3 +33,9 @@ Tue 12 Sep 2023 05:12:06 AM UTC:
  1 file changed, 33 insertions(+)
  tests:  0|0
 d20d2f9
+Tue 12 Sep 2023 05:13:09 AM UTC: 
+ treemap.c | 11 +++++++----
+ 1 file changed, 7 insertions(+), 4 deletions(-)
+ tests:  11|6
+total_score: 15/70
+d5d2ccf
