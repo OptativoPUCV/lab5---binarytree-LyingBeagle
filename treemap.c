@@ -126,12 +126,17 @@ void removeNode(TreeMap * tree, TreeNode* node) {
     else if(node->left == NULL){
       TreeNode* hijo = node->right;
       node->parent->left = hijo;
+
+      hijo->parent = node->parent;
+      free(node);
     }
     else if(node->right == NULL){
       TreeNode* hijo = node->left;
       node->parent->right = hijo;
-    }
 
+      hijo->parent = node->parent;
+      free(node);
+    }
     else{
         TreeNode* NodoMinumum = minimum(node->right);
         node->pair->key = NodoMinumum->pair->key;
